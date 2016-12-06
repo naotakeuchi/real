@@ -1,0 +1,9 @@
+<div class="contents row">
+ <% @experience.each do |experience| %>
+    <p>ジャンル: <%= experience.genre %></p>
+    <p>治療法: <%= experience.treatment %></p>
+    <p>症状: <%= experience.condition %></p>
+    <p>今の状況: <%=experience.comment %></p>
+    <p>詳細: <%=experience.detail %></p>
+<% end %>
+</div>
