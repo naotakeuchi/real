@@ -1,0 +1,26 @@
+<div class="contents row">
+<%= form_tag('/experiences', method: :post) do %>
+  <h3>
+  登録する
+  </h3>
+  <p>基本情報を登録する</p>
+  <div class="form-group">
+  <span>ジャンル</span><br /><input placeholder="ジャンルの選択" type="text" name="genre"></input> <!-- nameはparamsの指定をしている -->
+  </div>
+  <div class="form-group">
+  <span>症状</span><br /><input placeholder="現在の状態" type="text" name="condition"></input>
+  </div>
+  <div class="form-group">
+  <span>治療法</span><br /><input placeholder="治療法の選択" type="text" name="treatment">
+  </div>
+  <div class="form-group">
+  <span>コメント</span><br /><textarea cols="30" name="comment" placeholder="text" rows="10"></textarea>
+  </div>
+  <div class="form-group">
+  <span>詳細</span><br /><textarea cols="30" name="detail" placeholder="text" rows="10"></textarea>
+  </div>
+  <div class="form-group">
+  <input type="submit" value="登録する">
+  </div>
+<% end %>
+</div>
